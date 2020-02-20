@@ -83,7 +83,7 @@ class AccurateTimer {
         this.ms = ms;
     }
     /**
-    * @Method: Starts the Timer.
+    * @Method: Subscript to subject
     * @Return {callback, callback}
     */
     subscribe(success, error) {

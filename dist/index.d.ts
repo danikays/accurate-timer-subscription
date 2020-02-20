@@ -23,7 +23,7 @@ export declare class AccurateTimer {
     */
     setMilliseconds(ms: number): void;
     /**
-    * @Method: Starts the Timer.
+    * @Method: Subscript to subject
     * @Return {callback, callback}
     */
     subscribe(success: (v: string | number) => void, error?: (e: Error) => void): import("rxjs").Subscription;
