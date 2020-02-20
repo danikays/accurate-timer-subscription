@@ -6,37 +6,27 @@ This is the first module I made so I'd be happy to get feedback from others.
 npm install accurate-timer-subscription --save
 ```
 ## Usage
-### Javascript
 ```javascript
-const AccurateTimer = require('accurate-timer-subscription');
-const rxjs = require("rxjs");
-const timer = new AccurateTimer.AccurateTimer(interval);
-const sub = new rxjs.Subscription();
-sub.add(timer.subscribe((v) => {
-    console.log('Date:', v);
-}))
-timer.start();
-timer.stop();
-timer.setMilliseconds(2000);
-```
-```sh
-Output should be of type new Date().toISOString() or 0
-```
-### TypeScript
-```typescript
 import { AccurateTimer } from 'accurate-timer-subscription';
 import { Subscription } from 'rxjs';
+
 const timer = new AccurateTimer(1000);
 const sub = new Subscription();
+
+// Subscribe to events
 sub.add(timer.subscribe((v) => {
     console.log('Date:', v);
 }))
+// Start the timer
 timer.start();
-timer.stop();
+// Change interval while running
 timer.setMilliseconds(2000);
+// Stop the timer
+timer.stop();
+
 ```
 ```sh
-Output should be of type new Date().toISOString() or 0
+Output should be of type new Date().toISOString() or 0 for errors
 ```
 ## Test 
 ```sh

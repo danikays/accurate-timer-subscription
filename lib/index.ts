@@ -108,7 +108,7 @@ export class AccurateTimer {
     }
 
     /**
-    * @Method: Starts the Timer.
+    * @Method: Subscript to subject
     * @Return {callback, callback}
     */
     public subscribe(success: (v: string | number) => void, error?: (e: Error) => void) {

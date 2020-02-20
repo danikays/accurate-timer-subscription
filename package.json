@@ -1,6 +1,6 @@
 {
   "name": "accurate-timer-subscription",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "An accurate javascript timer with subscription.",
   "main": "dist/index.js",
   "scripts": {
