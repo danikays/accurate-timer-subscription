@@ -1,0 +1,37 @@
+{
+  "name": "accurate-timer-subscription",
+  "version": "0.0.1",
+  "description": "An accurate javascript timer with subscription.",
+  "main": "dist/index.js",
+  "scripts": {
+    "test": "mocha --reporter spec -r jsdom-global/register",
+    "build": "tsc"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/danikays/accurate-timer-subscription.git"
+  },
+  "keywords": [
+    "timer",
+    "interval",
+    "javascript",
+    "subscription"
+  ],
+  "author": "Dani Kays",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/danikays/accurate-timer-subscription/issues"
+  },
+  "homepage": "https://github.com/danikays/accurate-timer-subscription#readme",
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "jsdom": "16.2.0",
+    "jsdom-global": "3.0.2",
+    "mocha": "^7.0.1",
+    "tslint": "^6.0.0",
+    "typescript": "^3.7.5"
+  },
+  "dependencies": {
+    "rxjs": "^6.5.4"
+  }
+}
